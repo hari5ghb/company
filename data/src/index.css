@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-field {
+  @apply border-b-2 border-gray-500 focus:border-blue-500 p-2 w-80 text-lg;
+  outline: none; /* Remove the default focus outline */
+}
+.login-button {
+  @apply flex font-semibold justify-center items-center mt-5 text-white bg-blue-500 w-32 h-12 p-3 rounded-lg m-1 shadow-lg hover:bg-blue-600 hover:scale-105 transition duration-300 ease-in-out;
+}
+/* Reset default body and html styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Ensure the background color spans the full height */
+body {
+  background-color: black;
+}
